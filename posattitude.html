@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="css.css">
+      </head> 
+<body>
+
+<h1 ><ins>Positive Attitude, Positive Outcome</ins></h1>
+
+<img  onclick="myEx1first()" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="http://www.heightsperformance.com/wp-content/uploads/Attitude-300x300.jpg" alt="pos-arrow"  > 
+<button onclick="myEx1sec()">show/hide</button>
+<div id ="b" style="background-color: #FFD700; border-color: #7B68EE; color: #800000; text-align:left; padding-left: 12px; padding-bottom: 12px"> <h3 id="a"> </h3></div>
+
+<br>
+<br>
+<div>
+<h2 id= "myP" onmouseover="bigtext(this)" onmouseout="normaltext(this)">Merry Christmas and Happy New Year.<br> Stay positive because it will make holiday special</h2></div>
+<br>
+<div style="background-color:lightblue; border-color: black; color:#4B0082; text-align:left; padding-left: 12px; padding-bottom: 12px" > <h2>Why should we change our attitude and make it more positive</h2>
+<p>There still be challenges in one's life, of course: but you will be able to tackle them with a positive attitude, and that seemed to make all the difference. Little by little my attitude improved, and as my attitude improved, I began to enjoy my life more and more.
+<br>
+If you’re in a tough place right now, choose one of the principles of good attitude and set a goal to practice it as well as you can over the next month.
+<br>
+This might not immediately change your circumstances, but you will likely find that changing your attitude slowly but surely changes your life.</p>
+<br>
+
+How to be in positive attitude and tricks:
+<br>
+1.Be loving toward everyone you meet.
+<br>
+2.Forgive all who attempt to harm you.
+<br>
+3.You become what you think.
+<br>
+4.Look for ways to strengthen those who have less than you have.
+<br>
+5.Always seek knowledge and truth.
+<br>
+6.Always be honest.
+<br>
+7.Never waste what you are given.
+<br>
+8.Be grateful for all that you have.
+<br>
+9.Develop a spirit of optimism.
+<br>
+10.Have faith in something greater than yourself.
+</div>
+<br>
+<div style="background-color:#FFE4E1; border-color: black; color:#008080; text-align:left; padding-left: 15px; padding-bottom: 15px">
+<h1>
+<i>Meditation</i>
+</h1>
+<p>Meditation is a mental exercise. This quiet practice expands our consciousness and improves our concentration and creativity. Establishing control over our own minds gives birth to a positive life view.
+<br>
+5 effects:
+<br>
+1. Our body relaxes but our consciousness expands
+<br>
+2. Our mind comes to the present
+<br>
+3. Concentration
+<br>
+4. Better use of Brain
+<br>
+5. We connect to our field of pure potentialities
+</p>
+</div>
+<div  style="background-color:  #000000; border-color: white; color:red; text-align:center; padding-left: 15px; padding-bottom: 15px">
+<h1><b>Virtual Virus- how is cellphone and social media is harming "US"</b></h1>
+
+<img onclick="myEx2first()" onmouseover="devImg(this)" onmouseout="devNORImg(this)"src="http://www.radiationdangers.com/wp-content/uploads/2018/11/Screen-Shot-2018-11-26-at-1.27.17-PM.png" alt="devil-phone" width="250" height="300">
+<button onclick="myEx2sec()">show/hide</button>
+<div id ="d" style="background-color: #FF6347; border-color: #7B68EE; color:  #D8BFD8; text-align:left; padding-left: 12px; padding-bottom: 12px"> <h3 id="c"> </h3></div>
+
+<p>1. They are spying one you
+<br>
+2.  Physical harm- one spine and neck due looking down. Affect on eyes and ears. Sometimes fingers
+<br>
+3.  Cellphone causes 25% of road accidents- According to National Safety Council of USA, about 1.6 million accidents occur in America while texting and/or seeing a text while driving.
+<br>
+4.Chilldren are also at a risk factor of getting mental illness- autism.
+<br>
+5.  Detachment, loneliness depression, insecurity, addiction, stress increases- due to social media
+<br>
+6.  Women facing online Harassment
+<br>
+7.  Teenagers being the victims of Cyber bullying/ Crimes 
+<br>
+8.  Loss of Efficiency, Attention, Memory, and productivity.
+<br>
+9.  Taking Selfies is mental disorder
+<br>
+10. Damages Sexual Health
+<br>
+11. Phone Radiation increases Risk of Cancer
+<br>
+12. Gaming addition is a Mental Disorder
+<br>
+13. Phantom vibration.
+<p>
+</div>
+
+<input type="text" id="myComment" value="write new title">
+<button onclick="myChangetitle()">Try it</button>
+<p>do u feel happy by looking at this smiling twin babies. this is the power of positive envirmenta and attitude. 
+<br>
+Try changing the title to comment you feeling abount the pic</p>
+<h3 id= "demo">happy babies</h3>
+<img src="https://media.giphy.com/media/sr3TNSp9PdbNe/giphy.gif" alt="laughing twins">
+
+<h5>Comment Section</h5>
+<div id="e">
+   <button type="button" name="left"
+     onclick="pos(-1,0);">Left</button>
+   <button type="button" name="right"
+     onclick="pos(1,0);">Right</button>
+   <button type="button" name="up"
+     onclick="pos(0,-1);">Up</button>
+   <button type="button" name="down"
+     onclick="pos(0,1);">Down</button>
+   <button type="button" name="hide"
+     onclick="hideSquare();">Hide</button>
+   <button type="button" name="show"
+     onclick="showSquare();">Display</button>
+   </div>
+   <hr>
+   <div id="square">
+<form>
+<textarea id="words" rows="10" cols="20">Enter comment</textarea>
+<input type="button" onclick="getwords()" value="Enter" /> <br>
+<p id="para"></p>
+</form>
+</div>
+
+<script>
+var x=1000, y=1500;
+function pos(px,py) {
+ if (!document.getElementById) return;
+ x += 30*px;
+ y += 30*py;
+ obj = document.getElementById("square");
+ obj.style.top=y + "px";
+ obj.style.left=x + "px";
+ }
+ function hideSquare(){
+ if (!document.getElementById) return;
+ obj = document.getElementById("square");
+ obj.style.display="none";
+ }
+ function showSquare(){
+ if (!document.getElementById) return;
+ obj = document.getElementById("square");
+ obj.style.display="block";
+ }
+</script>
+
+<script>
+function getwords() {
+  text = words.value;
+  document.getElementById("para").innerHTML += '<p>'+text
+  document.getElementById("words").value = "enter"
+}
+</script>
+
+
+<br>
+<p style="color: grey; text-align:left">I got all this wonderful information from the a meditation society website. It is a bengali website so most of the content are in bengali language, but you can translate some articles in the website . </p>
+<a href = "https://quantummethod.org.bd/en" onclick="alert('an event!');"> Go To to the source</a>
+<br>
+<button onclick="goBack()">back</button>
+<br>
+<button onclick="goForward()">forward</button>
+<script type="text/javascript" src="java.js"></script>  
+</body>
+</html>
